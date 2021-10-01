@@ -372,9 +372,9 @@ a:active {
 
 .p-header .logo {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 20px;
-  width: 160px;
+  width: 140px;
   z-index: 3000;
 }
 
@@ -3611,6 +3611,20 @@ a:active {
     background: rgba(14, 13, 13, 0.6);
     -webkit-transition: 1.0s;
     transition: 1.0s;
+  }
+  .p-mv .swiper-slide {
+    position: relative;
+  }
+  .p-mv .swiper-slide::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #303030;
+    opacity: .3;
   }
   .p-mv .scroll-dwn {
     left: 50%;

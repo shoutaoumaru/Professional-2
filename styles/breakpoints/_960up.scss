@@ -75,6 +75,22 @@
 
 //.p-mv 
 .p-mv {
+  .swiper-slide {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: $cBlack;
+      opacity: .3;
+    }
+  }
+
   & .scroll-dwn {
     left: 50%;
     bottom: 0;
