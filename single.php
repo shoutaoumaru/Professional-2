@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NEWS/single｜士業テンプレート</title>
-    <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="../styles/vendor/animsition.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css" />
   </head>
 
   <body>
     <div id="main-wrapper" class="animsition news-single">
       <header id="header" class="p-header">
         <div class="logo clip-js3 top">
-          <a class="animsition-link" href="/">
-            <img src="/images/logo.png" alt="" />
+          <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" />
           </a>
         </div>
         <!-- /.logo -->
@@ -26,23 +26,23 @@
           <nav class="pc-nav">
             <ul class="pc-nav__list">
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/">ホーム</a>
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/business/business.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/business')); ?>"
                   >取り扱い業務</a
                 >
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/company/company.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/business')); ?>"
                   >事務所紹介</a
                 >
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/news/news.html">ニュース</a>
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">ニュース</a>
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/recruit/recruit.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>"
                   >採用情報</a
                 >
               </li>
@@ -69,15 +69,11 @@
           <ul class="c-news-sl__list">
             <li class="c-news-sl__block">
               <div class="c-news-sl__tit">
-                <p class="c-txt-md">新型コロナウィルス感染予防について。</p>
-                <span class="c-news-sl__date">2021.4.5</span>
+                <p class="c-txt-md"><?php the_title(); ?></p>
+                <span class="c-news-sl__date"><?php echo get_the_date(); ?></span>
               </div>
               <div class="c-news-sl__contents">
-                <p>
-                  2021年5月7日（金）より期間限定で、「芳醇フランボワーズチーズタルト」を国内全店舗にて販売いたします。
-                  チーズムースにフランボワーズのジャムとピューレを配合し、クリームチーズの“コク”とフランボワーズの“甘酸っぱさ”が絶妙にマッチした、オリジナルの「フランボワーズチーズムース」に仕上げました。
-                  クッキー生地では、フランボワーズのイメージから連想される“レッド”を表現。
-                  ほんのりと感じられる「ココア」の風味が「フランボワーズチーズムース」との相性もぴったりです。
+                <p><?php the_content(); ?>
                 </p>
               </div>
             </li>
@@ -86,126 +82,24 @@
             <a
               class="more-link animsition-link"
               class="animsition"
-              href="/news/news.html"
-              ><span class="readmore">一覧へ戻る</span></a
-            >
+              href=" <?php echo esc_url( home_url('/news')); ?>"
+              ><span class="readmore">一覧へ戻る</span>
+            </a>
           </div>
         </div>
       </section>
       <!-- /.news-top -->
-      <div class="first-wrapper">
-        <footer class="p-footer">
-          <div class="p-footer__wrap">
-            <div class="p-footer__label">
-              <h2 class="p-footer__logo">
-                <img src="/images/logo.png" alt="" />
-              </h2>
-            </div>
-            <div class="p-open-time">
-              <nav class="p-footer__nav">
-                <ul>
-                  <li>
-                    <a href="/" class="animsition-link m-button-arrow-l"
-                      >ホーム</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/business/business.html"
-                      class="animsition-link m-button-arrow-l"
-                      >取り扱い業務</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/company/company.html"
-                      class="animsition-link m-button-arrow-l"
-                      >事務所紹介</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/news/news.html"
-                      class="animsition-link m-button-arrow-l"
-                      >ニュース</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/recruit/recruit.html"
-                      class="animsition-link m-button-arrow-l"
-                      >採用情報</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="p-footer__wrap">
-            <address>
-              <p class="c-txt-sm">
-                〒812-0011<br />福岡県福岡市博多区博多駅前3-27-25-9F
-              </p>
-              <p class="c-txt-sm">
-                <span>Google Map</span>
-              </p>
-            </address>
-            <div>
-              <p class="c-txt-sm">TEL：0120-123-456</p>
-              <p class="c-txt-sm">FAX：0120-123-789</p>
-            </div>
-          </div>
-          <!-- /.p-open-time -->
-          <div class="p-footer__copyright">
-            Copyright © 株式会社 Riv建設 All Rights Reserved.
-          </div>
-        </footer>
-      </div>
+      <?php get_template_part('includes/c-footer'); ?>      
       <!-- /.p-footer -->
-      <div class="l-menu-sp u-hidden-wide">
-        <div class="l-menu-sp__inner">
-          <nav class="l-menu-sp__nav">
-            <ul>
-              <li><a class="animsition-link" href="/">ホーム</a></li>
-              <li>
-                <a class="animsition-link" href="/business/business.html"
-                  >取り扱い業務</a
-                >
-              </li>
-              <li>
-                <a class="animsition-link" href="/company/company.html"
-                  >事務所紹介</a
-                >
-              </li>
-              <li>
-                <a class="animsition-link" href="/news/news.html">ニュース</a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"
-                  >採用情報</a
-                >
-              </li>
-            </ul>
-            <div class="reserve-btn-wrap">
-              <div class="reserve-btn-tel">
-                <h4>お電話はこちら</h4>
-                <div class="reserve-btn">
-                  <a href="tel:092-686-7954"><span>092-686-7954</span></a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
+      <?php get_template_part('includes/c-header'); ?>     
       <!-- /.l-menu-sp -->
     </div>
     <!-- .superwrapper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../scripts/vendor/animsition.min.js"></script>
-    <script src="../scripts/libs/page.js"></script>
-    <script src="../scripts/libs/scroll-btn.js"></script>
-    <script src="../scripts/libs/mobile-menu.js"></script>
-    <script src="../scripts/libs/date.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/date.js"></script> -->
   </body>
 </html>

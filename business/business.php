@@ -1,17 +1,21 @@
+<?php
+ /* Template Name: business
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>取り扱い業務 | 士業テンプレート1</title>
-    <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="../styles/vendor/animsition.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css" />
   </head>
 
   <body>
@@ -19,7 +23,7 @@
       <header id="header" class="p-header">
         <div class="logo clip-js3 top">
           <a class="animsition-link" href="/">
-            <img src="/images/logo.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" />
           </a>
         </div>
         <!-- /.logo -->
@@ -29,23 +33,23 @@
           <nav class="pc-nav">
             <ul class="pc-nav__list">
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/">ホーム</a>
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/business/business.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/business')); ?>"
                   >取り扱い業務</a
                 >
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/company/company.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>"
                   >事務所紹介</a
                 >
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/news/news.html">ニュース</a>
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">ニュース</a>
               </li>
               <li class="pc-nav__item">
-                <a class="animsition-link" href="/recruit/recruit.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>"
                   >採用情報</a
                 >
               </li>
@@ -71,7 +75,7 @@
         <div id="c-topview" class="c-topview">
           <div class="c-topview__inner">
             <div class="c-topview__img">
-              <img class="view-sp" src="/images/service/values.jpg" alt="" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/service/values.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -97,7 +101,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-1.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-1.jpg"
                   alt=""
                 />
               </div>
@@ -117,7 +121,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-2.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-2.jpg"
                   alt=""
                 />
               </div>
@@ -137,7 +141,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-3.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-3.jpg"
                   alt=""
                 />
               </div>
@@ -157,7 +161,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-4.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-4.jpg"
                   alt=""
                 />
               </div>
@@ -179,7 +183,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-5.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-5.jpg"
                   alt=""
                 />
               </div>
@@ -201,7 +205,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-6.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-6.jpg"
                   alt=""
                 />
               </div>
@@ -222,7 +226,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-7.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-7.jpg"
                   alt=""
                 />
               </div>
@@ -242,7 +246,7 @@
               <div class="fs-promise__img cover-slide">
                 <img
                   class="img-zoom"
-                  src="/images/service/service-8.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/images/service/service-8.jpg"
                   alt=""
                 />
               </div>
@@ -264,22 +268,22 @@
         <nav class="btn-category appear up">
           <ul class="item">
             <li>
-              <a href="/business/business.html"
+              <a href=" <?php echo esc_url( home_url('/business')); ?>"
                 ><span class="btn-category__first"></span><i>取り扱い業務</i></a
               >
             </li>
             <li>
-              <a href="/company/company.html"
+              <a href=" <?php echo esc_url( home_url('/company')); ?>"
                 ><span class="btn-category__care"></span><i>事務所紹介</i></a
               >
             </li>
             <li>
-              <a href="/recruit/recruit.html"
+              <a href=" <?php echo esc_url( home_url('/recruit')); ?>"
                 ><span class="btn-category__staff"></span><i>採用情報</i></a
               >
             </li>
             <li class="u-hidden-pc">
-              <a href="/news/news.html"
+              <a href=" <?php echo esc_url( home_url('/news')); ?>"
                 ><span class="btn-category__faq"></span><i>ニュース</i></a
               >
             </li>
@@ -287,119 +291,19 @@
         </nav>
       </div>
       <!-- /.first-contents -->
-      <footer class="p-footer">
-        <div class="p-footer__wrap">
-          <div class="p-footer__label">
-            <h2 class="p-footer__logo">
-              <img src="/images/logo.png" alt="" />
-            </h2>
-          </div>
-          <div class="p-open-time">
-            <nav class="p-footer__nav">
-              <ul>
-                <li>
-                  <a href="/" class="animsition-link m-button-arrow-l"
-                    >ホーム</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/business/business.html"
-                    class="animsition-link m-button-arrow-l"
-                    >事業内容</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/company/company.html"
-                    class="animsition-link m-button-arrow-l"
-                    >会社情報</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/news/news.html"
-                    class="animsition-link m-button-arrow-l"
-                    >ニュース</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/recruit/recruit.html"
-                    class="animsition-link m-button-arrow-l"
-                    >採用情報</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-        <div class="p-footer__wrap">
-          <address>
-            <p class="c-txt-sm">
-              〒812-0011<br />福岡県福岡市博多区博多駅前3-27-25-9F
-            </p>
-            <p class="c-txt-sm">
-              <span>Google Map</span>
-            </p>
-          </address>
-          <div>
-            <p class="c-txt-sm">TEL：0120-123-456</p>
-            <p class="c-txt-sm">FAX：0120-123-789</p>
-          </div>
-        </div>
-        <!-- /.p-open-time -->
-        <div class="p-footer__copyright">
-          Copyright © 株式会社 Riv建設 All Rights Reserved.
-        </div>
-      </footer>
+      <?php get_template_part('includes/c-footer'); ?>      
       <!-- /.p-footer -->
-      <div class="l-menu-sp u-hidden-wide">
-        <div class="l-menu-sp__inner">
-          <nav class="l-menu-sp__nav">
-            <ul>
-              <li><a class="animsition-link" href="/">ホーム</a></li>
-              <li>
-                <a class="animsition-link" href="/business/business.html"
-                  >取り扱い業務</a
-                >
-              </li>
-              <li>
-                <a class="animsition-link" href="/company/company.html"
-                  >事務所紹介</a
-                >
-              </li>
-              <li>
-                <a class="animsition-link" href="/news/news.html">ニュース</a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"
-                  >採用情報</a
-                >
-              </li>
-            </ul>
-            <div class="reserve-btn-wrap">
-              <div class="reserve-btn-tel">
-                <h4>お電話はこちら</h4>
-                <div class="reserve-btn">
-                  <a href="tel:092-686-7954"><span>092-686-7954</span></a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
+      <?php get_template_part('includes/c-header'); ?>     
       <!-- /.l-menu-sp -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../scripts/vendor/animsition.min.js"></script>
-    <script src="../scripts/libs/scroll-btn.js"></script>
-    <script src="/scripts/libs/page.js"></script>
-    <script src="../scripts/libs/scroll.js"></script>
-    <script src="../scripts/libs/text-animation.js"></script>
-    <script src="../scripts/libs/mobile-menu.js"></script>
-    <script src="../scripts/libs/date.js"></script>
-    <script src="../scripts/c-main.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/text-animation.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/date.js"></script> -->
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/c-main.js"></script>
   </body>
 </html>

@@ -9,32 +9,32 @@
           <nav class="p-footer__nav">
             <ul>
               <li>
-                <a href="/" class="animsition-link m-button-arrow-l">ホーム</a>
+                <a href=" <?php echo esc_url( home_url('/')); ?>" class="animsition-link m-button-arrow-l">ホーム</a>
               </li>
               <li>
                 <a
-                  href="/business/business.html"
+                  href=" <?php echo esc_url( home_url('/business')); ?>"
                   class="animsition-link m-button-arrow-l"
                   >取り扱い業務</a
                 >
               </li>
               <li>
                 <a
-                  href="/company/company.html"
+                  href=" <?php echo esc_url( home_url('/company')); ?>"
                   class="animsition-link m-button-arrow-l"
                   >事務所紹介</a
                 >
               </li>
               <li>
                 <a
-                  href="/news/news.html"
+                  href=" <?php echo esc_url( home_url('/news')); ?>"
                   class="animsition-link m-button-arrow-l"
                   >ニュース</a
                 >
               </li>
               <li>
                 <a
-                  href="/recruit/recruit.html"
+                  href=" <?php echo esc_url( home_url('/recruit')); ?>"
                   class="animsition-link m-button-arrow-l"
                   >採用情報</a
                 >

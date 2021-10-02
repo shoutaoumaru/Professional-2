@@ -2,22 +2,22 @@
         <div class="l-menu-sp__inner">
           <nav class="l-menu-sp__nav">
             <ul>
-              <li><a class="animsition-link" href="/">ホーム</a></li>
+              <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a></li>
               <li>
-                <a class="animsition-link" href="/business/business.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/business')); ?>"
                   >取り扱い業務</a
                 >
               </li>
               <li>
-                <a class="animsition-link" href="/company/company.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>"
                   >事務所紹介</a
                 >
               </li>
               <li>
-                <a class="animsition-link" href="/news/news.html">ニュース</a>
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">ニュース</a>
               </li>
               <li>
-                <a class="animsition-link" href="/recruit/recruit.html"
+                <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>"
                   >採用情報</a
                 >
               </li>
