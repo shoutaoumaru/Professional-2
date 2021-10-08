@@ -8,68 +8,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>取り扱い業務 | 士業テンプレート1</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/animsition.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css" />
+    <?php get_header(); ?>
   </head>
 
   <body>
     <div class="first-wrapper animsition">
-      <header id="header" class="p-header">
-        <div class="logo clip-js3 top">
-          <a class="animsition-link" href="/">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" />
-          </a>
-        </div>
-        <!-- /.logo -->
-        <div class="l-menu-sp-button clip-js3 top"><i></i><i></i><i></i></div>
-        <!-- /.l-menu-sp-button -->
-        <div class="pc-menu">
-          <nav class="pc-nav">
-            <ul class="pc-nav__list">
-              <li class="pc-nav__item">
-                <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">ホーム</a>
-              </li>
-              <li class="pc-nav__item">
-                <a class="animsition-link" href=" <?php echo esc_url( home_url('/business')); ?>"
-                  >取り扱い業務</a
-                >
-              </li>
-              <li class="pc-nav__item">
-                <a class="animsition-link" href=" <?php echo esc_url( home_url('/company')); ?>"
-                  >事務所紹介</a
-                >
-              </li>
-              <li class="pc-nav__item">
-                <a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">ニュース</a>
-              </li>
-              <li class="pc-nav__item">
-                <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>"
-                  >採用情報</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="l-action-sp">
-          <ul class="l-action-sp__buttons">
-            <li class="l-action-sp__button-access">
-              <a href="https://goo.gl/maps/zHQuAuFJBFJgpG6fA"
-                ><i>取り扱い業務</i></a
-              >
-            </li>
-            <li class="l-action-sp__button-tel">
-              <a href="tel:092-686-7954"><i>お問い合わせ</i></a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.l-action-sp__buttons -->
-      </header>
+      <!-- header -->
+      <?php get_template_part('includes/c-header'); ?>      
       <!-- /.p-header -->
       <div class="first-contents">
         <div id="c-topview" class="c-topview">
@@ -290,10 +235,9 @@
           </ul>
         </nav>
       </div>
-      <!-- /.first-contents -->
-      <?php get_template_part('includes/c-footer'); ?>      
+      <!-- /.first-contents -->   
       <!-- /.p-footer -->
-      <?php get_template_part('includes/c-header'); ?>     
+      <?php get_footer(); ?>     
       <!-- /.l-menu-sp -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
